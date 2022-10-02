@@ -1,0 +1,15 @@
+{
+	"main": "./src/index.ts",
+	"scripts": {
+		"build": "webpack --mode=development",
+		"server": "webpack serve --open"
+	},
+	"devDependencies": {
+		"@types/jquery": "^3.5.14",
+		"jquery": "^3.6.1",
+		"ts-loader": "^9.4.1",
+		"webpack": "^5.74.0",
+		"webpack-dev-server": "^4.11.1",
+		"webpack-glob-entry": "^2.1.1"
+	}
+}
