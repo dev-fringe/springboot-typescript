@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan
 public class Application extends SpringBootServletInitializer {//servlet
 	
 	//servlet
