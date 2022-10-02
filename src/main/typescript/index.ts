@@ -33,5 +33,9 @@ class Kucing implements Hewan{
 
 let kucing = new Kucing();
 kucing.habitat = "KKKK1111";
-
-kucing.myInfo();
+$(document).ready(function() { 
+ 	$('.box').css({
+    backgroundColor : "red"
+    }); 
+	kucing.myInfo();
+});
