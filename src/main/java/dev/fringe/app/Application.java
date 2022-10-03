@@ -7,13 +7,15 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 
 @SpringBootApplication
-public class Application extends SpringBootServletInitializer {//servlet
+public class Application {
+//	extends SpringBootServletInitializer {//servlet
+//}
 	
-	//servlet
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(Application.class);
-	}
-	
+//	//servlet
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//		return builder.sources(Application.class);
+//	}
+//	
 	public static void main(String[] args) {
 		new SpringApplicationBuilder(Application.class).web(WebApplicationType.SERVLET).run(args);
 	}
