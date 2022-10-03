@@ -22,6 +22,7 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 public class WebMvcConfig implements ApplicationContextAware, WebMvcConfigurer {
 	
+	@SuppressWarnings("unused")
 	private ApplicationContext applicationContext;
 	
 	@Override
