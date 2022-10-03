@@ -2,10 +2,12 @@
 	"main": "./src/index.ts",
 	"scripts": {
 		"build": "webpack --mode=development",
-		"server": "webpack serve --open"
+		"server": "webpack serve --open",
+		"watch": "webpack --watch"
 	},
 	"devDependencies": {
 		"@types/jquery": "^3.5.14",
+		"copy-webpack-plugin": "^11.0.0",
 		"jquery": "^3.6.1",
 		"reflect-metadata": "^0.1.13",
 		"ts-loader": "^9.4.1",

@@ -1,6 +1,6 @@
 const path = require('path');
-const webpack = require('webpack');
 var entry = require('webpack-glob-entry')
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry:  entry('./src/main/typescript/*.ts'),
@@ -17,8 +17,16 @@ module.exports = {
     resolve: {
       extensions: [ ".tsx", ".ts", ".js" ]
     },
+    devServer: {
+    	open: true
+    },
     output: {
-       filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'src/main/webapp/js')
-    }
+    	filename: '[name].js',
+      	path: path.resolve(__dirname, 'src/main/webapp/js')
+    },
+	plugins: [
+    	new CopyPlugin({
+      		patterns: [{ from: "./src/index.html", to: "./src/main/webapp/html" }],
+    	}),
+  	],    
   };

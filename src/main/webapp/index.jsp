@@ -10,5 +10,5 @@
 한글
     <div class="box"></div>
 </body>
-   <script src="./js/index.bundle.js"></script>
+   <script src="./js/index1.js"></script>
 </html>
