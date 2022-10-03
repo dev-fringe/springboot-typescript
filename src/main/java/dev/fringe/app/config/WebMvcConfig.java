@@ -25,12 +25,10 @@ public class WebMvcConfig implements ApplicationContextAware, WebMvcConfigurer {
 	@SuppressWarnings("unused")
 	private ApplicationContext applicationContext;
 	
-	@Override
 	public void setApplicationContext(final ApplicationContext applicationContext) throws BeansException {
 		this.applicationContext = applicationContext;
 	}
 
-	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
@@ -59,7 +57,6 @@ public class WebMvcConfig implements ApplicationContextAware, WebMvcConfigurer {
 		viewResolver.setSuffix(".jsp");
 		viewResolver.setCache(false);
 		viewResolver.setRequestContextAttribute("rc");
-
 		return viewResolver;
 	}
 
